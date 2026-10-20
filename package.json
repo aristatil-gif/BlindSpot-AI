@@ -1,0 +1,21 @@
+{
+  "name": "blindspot-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BlindSpot AI: review intelligence that finds the patterns star ratings hide.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build:client": "node --disable-warning=ExperimentalWarning scripts/build-client.mjs",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.client.json --noEmit",
+    "start": "node --disable-warning=ExperimentalWarning scripts/build-client.mjs && node --disable-warning=ExperimentalWarning src/server/index.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.ts",
+    "dev": "node --disable-warning=ExperimentalWarning scripts/build-client.mjs && node --disable-warning=ExperimentalWarning src/server/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0"
+  }
+}

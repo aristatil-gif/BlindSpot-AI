@@ -1,0 +1,14 @@
+node_modules/
+data/
+*.db
+*.db-journal
+.env
+.env.*
+!.env.example
+public/js/
+public/index.html
+public/style.css
+public/favicon.svg
+.DS_Store
+*.log
+*.pdf
